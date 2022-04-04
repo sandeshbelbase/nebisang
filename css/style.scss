@@ -60,7 +60,6 @@
   }
   ul.nav_bar li {
     list-style: none;
-    line-height: 63px;
     border-bottom: 2px solid #fff;
   }
   ul.nav_bar li a {
@@ -68,22 +67,33 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
     color: #4c4b63;
     text-decoration: none;
-  }
-  ul.nav_bar li:hover {
-    border-bottom: 3px solid #ef4444;
-  }
-  ul.nav_bar li:hover a {
-    text-decoration: none;
-    font-family: "Euclid Circular B";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #ef4444;
+    position: relative;
+    display: block;
+    line-height: 63px;
+    &:hover {
+      text-decoration: none;
+      font-family: "Euclid Circular B";
+      font-style: normal;
+      font-size: 16px;
+      transition: 0.1s;
+      color: #ef4444;
+
+      &::after{
+        content: '';
+        border-bottom: 3px solid #ef4444;
+        position: absolute;
+        // top: 0px;
+        bottom: -3px;
+        width: 100%;
+        left: 0px;
+      }
+
+      &:focus{
+      color: #ef4444;
+      }
+    }
   }
   #language {
     height: fit-content;
@@ -333,6 +343,7 @@
 }
 
 .upcoming_events {
+  margin-bottom: 50px;
   .slide_head {
     display: flex;
     justify-content: space-between;
@@ -490,7 +501,7 @@
 }
 
 .footer{
-    margin-top: 50px;
+    // margin-top: 50px;
     padding: 50px 0px 30px 0px;
     background-color: #07372A;
         .copyright{
@@ -563,7 +574,405 @@
                     text-decoration: none;
                 }
         }
+}
+
+// TEams page css starts here
+
+.title_banner{
+  .title_img{
+    background-image: url("../images/title_banner.png");
+    height: 198px;
+    background-repeat: no-repeat;
+  }
+  .title_overlay{
+    position: relative;
+  }
+  .overlay{
+    height: 198px;
+    background-color: black;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.75;
+  }
+    .title_img img{
+      width: 100%;
+    }
+    .title_head{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      
+      span{
+        position: absolute;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+      padding: 10px 22px;
+      background: #FFFFFF;
+        width: fit-content;
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #047857;
+      }
+    }
+}
+
+.team_member{
+  margin: 50px 0px;
+  .mem{
+    margin: 25px 0px;
+  box-shadow:  0px 8px 20px rgba(18, 17, 39, 0.1);
+      .mem_img img{
+        width: 100%;
+      }
+
+      .mem_content{
+        background-color: #FFFAFA;
+        padding: 20px;
+
+        h4{
+          font-family: 'Euclid Circular B';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 20px;
+          color: #201F37;
+        }
+        p{
+          font-family: 'Euclid Circular B';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #4C4B63;
+        }
+        
+      }
+  }
+}
+
+// Campaing page css starts here
+
+.campaing_banner_wrap{
+    .campaing_wrap{
+      // position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .campaing_head_wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .campaing_head{
+      position: absolute;
+      top: 50%;
+      border-left: 3px solid #71A093;
+      padding: 10px 0px;
+      span{
+        display: block;
+        padding-left: 10px;
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        z-index: 1;
+      }
+    }
+}
+
+.ongoing_camp{
+    margin-top: 50px;
+
+}
+
+// campaing page css ends here
 
 
+// <---------------->
+
+
+// membership page css starts here
+
+.membership_wrapper{
+  margin-bottom: 50px;
+  .form{
+    background-color: #fff;
+    margin-top: -25px;
+    z-index: 1;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    padding: 30px 40px;
+    h2{
+      font-family: 'Euclid Circular B';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #228366; 
+      border-bottom: 1px solid #71A093;
+      padding-bottom: 16px;
+    }
+    label{
+      font-family: 'Euclid Circular B';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #464F60;
+    }
+    .input_field{
+      margin: 12px 0px;
+      input{
+        width: 100%;
+        margin: 5px 0px;
+        border: none;
+        background-color: #F1F1F1;
+        padding: 10px;
+      }
+    }
+    .submit{
+      padding: 8px 38px;
+      background-color: #047857;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+    }
+    .submit:hover{
+      padding: 8px 38px;
+      background-color: #07372A;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+}
+
+// Membership CSS end here//
+
+// -----------------------------
+// -----------------------------
+
+
+// about page css starts here
+
+.about_wrapper{
+  
+  .summary{
+    padding: 60px;
+    p{
+      font-family: 'Euclid Circular B';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 44px;
+      color: #000000;
+      text-align: justify;
+    }
+  }
+  
+}
+
+// css of about erap ends here
+// ?---------------------------------------
+// ---------------------------------------------
+
+// CSS of contact page starts here
+
+.contact_wrap{
+  margin: 60px 0px;
+
+  .form_section{
+    border: 1px solid #ddd;
+    padding: 40px;
+    height: max-content;
+ input{
+    width: 100%;
+    border: none;
+    background: #F7F7FA;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+textarea{
+  width: 100%;
+}
+ span{
+  font-family: 'Euclid Circular B';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #464F60;
+} 
+}
+
+ h3{
+  font-family: 'Euclid Circular B';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration-line: underline;
+   color: #065F46;
+   padding-bottom: 10px;
+   display: block;
+}
+
+.map_section{
+    padding: 40px 40px 40px 60px;
+
+  .map_content img{
+      width: 100%;
+  }
+  ul.map_content{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+  }
+  .map_content {
+    li{
+      padding: 15px 0px;
+  }
+    i{
+      color: #047857;
+    }
+}
+  }
+
+#submit{
+    display: flex;
+    max-width: fit-content;
+    padding: 8px 28px;
+    background-color: #047857;
+    color: #fff;
+    margin-top: 20px;
+
+    &:hover{
+      background-color: #07372a;
+    }
+}
+#pass{
+    height: 101px;
+}
+}
+
+// Contact_page css ends here
+
+
+// History Page css starts here
+
+.history_wrap{
+  margin: 60px 0px;
+
+  .history_container{
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+  }
+
+  .history_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+     h2{
+      font-family: 'Euclid Circular B';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 20px;
+      color: #DA4747;
+      padding: 12px 24px;
+      border-bottom: 2px solid #F8D5D5;
+     }
+  }
+    .history_date{
+      display: flex;
+      justify-content: flex-end;
+      span{
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        color: #201F37;
+      }
+    }
+
+    .lines{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .history_found{
+      background: #F9D3D3;
+      padding: 22px;
+      box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+      h4{
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: #201F37;
+      }
+      p{
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #121127;
+        margin: 0px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+  .summary{
+  padding: 0px 70px;
+  h4{
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #121127;
+  }
+  p{
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+    color: #000000;
+  }
+  }
 
 }
