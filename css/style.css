@@ -1,0 +1,1746 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0px;
+}
+
+.minister_slide_wrap {
+  display: none;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header .hamburger {
+  display: none;
+}
+
+.header .top_head {
+  background-color: #da4747;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.header ul.top_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0px;
+  padding: 5px 0px;
+}
+
+.header ul.top_nav li {
+  list-style: none;
+  padding: 0px 10px;
+  color: #fff;
+  border-right: 1px solid #abd3c7;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #e9e9e9;
+  text-decoration: none;
+}
+
+.header ul.top_nav li span {
+  text-decoration: none;
+}
+
+.header li.social_media {
+  border-right: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header li.social_media i {
+  color: #fff;
+}
+
+.header li.social_media i:hover {
+  color: #000;
+}
+
+.header .social_media a {
+  padding-left: 20px;
+}
+
+.header ul.nav_bar {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header ul.nav_bar li {
+  list-style: none;
+  border-bottom: 2px solid #fff;
+}
+
+.header ul.nav_bar li a {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4c4b63;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  line-height: 63px;
+}
+
+.header ul.nav_bar li a:hover {
+  text-decoration: none;
+  font-family: "Mukta";
+  font-style: normal;
+  font-size: 16px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #ef4444;
+}
+
+.header ul.nav_bar li a:hover::after {
+  content: "";
+  border-bottom: 3px solid #ef4444;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  left: 0px;
+}
+
+.header ul.nav_bar li a:hover:focus {
+  color: #ef4444;
+}
+
+.header .select_wrap {
+  background-color: #E9E9E9;
+  padding: 2px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header .select_wrap #language {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.header .logo {
+  position: absolute;
+  top: 0px;
+  padding: 20px 12px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.slider_main .slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+
+.slider_main .slick-prev:before {
+  color: #da4747 !important;
+  opacity: 1 !important;
+  padding: 3px;
+}
+
+.slider_main .slick-next {
+  right: 20px;
+  z-index: 1;
+}
+
+.slider_main .slick-next:before {
+  color: #da4747 !important;
+  opacity: 1 !important;
+  padding: 3px;
+}
+
+.slider_main .banner {
+  position: relative;
+}
+
+.slider_main .banner .background_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider_main .banner .banner_wrapper {
+  padding: 60px 0px;
+}
+
+.slider_main .banner .bcontent_wrap {
+  z-index: -1;
+  height: calc(100vh - 100px);
+  background-color: rgba(254, 247, 242, 0.8);
+}
+
+.slider_main .banner .banner_img img {
+  width: 100%;
+}
+
+.slider_main .banner .banner_content span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.9px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #121127;
+}
+
+.slider_main .banner .banner_content h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  color: #065f46;
+  margin: 10px 0px;
+}
+
+.slider_main .banner .banner_content p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #383751;
+  margin: 0px;
+  margin: 10px 0px;
+}
+
+.slider_main .banner .banner_content button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space;
+      -ms-flex-pack: space;
+          justify-content: space;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 12px 6px 25px;
+  background: #047857;
+  border: none;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+  border-radius: 3px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin: 10px 0px;
+}
+
+.slider_main .banner .banner_content button:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: rgba(254, 247, 242, 0.8);
+}
+
+.slider_main .banner .banner_content button:hover span {
+  color: #000;
+}
+
+.slider_main .banner .banner_content button span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.minister_sec {
+  margin: 50px 0px;
+  background-color: #f3f3f6;
+  padding: 40px 0px;
+}
+
+.minister_sec .minister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.minister_sec .minister_detail {
+  /* padding: 5px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.minister_sec .minister_detail img {
+  width: 100%;
+}
+
+.minister_sec .minister_detail span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #047857;
+  padding-top: 10px;
+  display: block;
+}
+
+.minister_sec .m_img {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 2px green;
+          box-shadow: 0px 4px 2px green;
+  overflow: hidden;
+}
+
+.minister_sec .m_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 105px;
+}
+
+.president .president_img img {
+  width: 100%;
+}
+
+.president .president_content {
+  padding: 40px;
+}
+
+.president .president_content h2 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 26px;
+  letter-spacing: 0.44px;
+  color: #047857;
+}
+
+.president .president_content span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #6c6b80;
+}
+
+.president .president_content p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #201f37;
+  margin: 1rem 0rem;
+  text-align: justify;
+}
+
+.nebi_president {
+  margin: 50px 0px;
+  padding: 40px 0px;
+  background-image: url("../images/nebi_texture.png");
+}
+
+.nebi_president .nebi_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.nebi_president .nebi_president_content {
+  padding: 0px 20px;
+}
+
+.nebi_president .nebi_president_content h2 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: 0.44px;
+  color: #047857;
+}
+
+.nebi_president .nebi_president_content span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  color: #4c4b63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nebi_president .nebi_president_content p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: right;
+  color: #201f37;
+}
+
+.nebi_president .nsu_img {
+  padding-left: 20px;
+}
+
+.nebi_president .nsu_img img {
+  width: 100%;
+}
+
+.upcoming_events {
+  margin: 50px 0px;
+}
+
+.upcoming_events .slide_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upcoming_events .slide_head h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  color: #201f37;
+}
+
+.upcoming_events .slide_head span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #4559bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.upcoming_events .vertical_slide {
+  margin: 0px !important;
+}
+
+.upcoming_events .event_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.upcoming_events .event_section .event_content {
+  padding: 0px 20px;
+}
+
+.upcoming_events .event_section .event_content h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #201f37;
+  margin: 0px;
+}
+
+.upcoming_events .event_section .event_content span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #6c6b80;
+}
+
+.upcoming_events .event_section .event_content p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4c4b63;
+}
+
+.upcoming_events .event_section:hover {
+  background: rgba(219, 209, 209, 0.2);
+}
+
+.upcoming_events .vertical_slide {
+  border: 2px solid #e5e5eb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 25px;
+  margin-top: 30px;
+}
+
+.upcoming_events .n_arrow {
+  position: absolute;
+  top: -28px;
+  right: 0px;
+  color: #4559bd;
+  padding: 4px;
+}
+
+.upcoming_events .p_arrow {
+  position: absolute;
+  right: 0px;
+  top: -44px;
+  color: #4559bd;
+  padding: 4px;
+}
+
+.upcoming_events .wresponse {
+  margin-left: 20px;
+}
+
+.upcoming_events .form {
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+
+.upcoming_events .form .half_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upcoming_events .form .half_input .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0px 10px 10px;
+}
+
+.upcoming_events .form .half_input .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0px;
+}
+
+.upcoming_events .form .name {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.upcoming_events .form .message {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.upcoming_events .form .message textarea {
+  width: 100%;
+}
+
+.upcoming_events .form .submit {
+  width: fit -webkit-fit-content;
+  width: fit -moz-fit-content;
+  width: fit fit-content;
+  padding: 8px 38px;
+  margin-top: 20px;
+  background: #047857;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.upcoming_events .form .submit:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.upcoming_events .form label {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #464f60;
+  margin: 5px 0px;
+}
+
+.upcoming_events .form input {
+  background: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(134, 143, 160, 0.16);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(134, 143, 160, 0.16);
+  border-radius: 3px;
+  border: none;
+  padding: 10px 4px;
+}
+
+.footer {
+  padding: 50px 0px 30px 0px;
+  background-color: #07372a;
+}
+
+.footer .copyright {
+  border-right: 1px solid #b0b0b0;
+}
+
+.footer .copyright .rights {
+  color: #fff;
+  opacity: 56%;
+  margin-top: 20px;
+}
+
+.footer .copyright .social_media {
+  margin-top: 20px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .copyright .social_media a {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.footer .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #b0b0b0;
+}
+
+.footer .contacts ul {
+  padding: 0px;
+}
+
+.footer .contacts li {
+  list-style: none;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.44px;
+  color: #d7d8d8;
+  margin: 20px 0px;
+}
+
+.footer .contacts li i {
+  padding-right: 10px;
+}
+
+.footer .fmenus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .fmenus ul {
+  padding: 0px;
+}
+
+.footer .fmenus li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.footer .fmenus li a {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.44px;
+  color: #d7d8d8;
+  text-decoration: none;
+}
+
+.title_banner .title_img {
+  background-image: url("../images/title_banner.png");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_banner .title_overlay {
+  position: relative;
+}
+
+.title_banner .overlay {
+  height: 250px;
+  background-color: black;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.75;
+}
+
+.title_banner .title_img img {
+  width: 100%;
+}
+
+.title_banner .title_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.title_banner .title_head span {
+  position: absolute;
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 22px;
+  background: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #047857;
+}
+
+.team_member {
+  margin: 50px 0px;
+}
+
+.team_member .mem {
+  margin: 25px 0px;
+  -webkit-box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+          box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+}
+
+.team_member .mem .mem_img img {
+  width: 100%;
+}
+
+.team_member .mem .mem_content {
+  background-color: #fffafa;
+  padding: 20px;
+}
+
+.team_member .mem .mem_content h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #201f37;
+}
+
+.team_member .mem .mem_content p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4c4b63;
+}
+
+.campaing_banner_wrap .campaing_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.campaing_banner_wrap .campaing_head_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.campaing_banner_wrap .campaing_head {
+  position: absolute;
+  top: 50%;
+  border-left: 3px solid #71a093;
+  padding: 10px 0px;
+}
+
+.campaing_banner_wrap .campaing_head span {
+  display: block;
+  padding-left: 10px;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.ongoing_camp {
+  margin-top: 50px;
+}
+
+.membership_wrapper {
+  margin-bottom: 50px;
+}
+
+.membership_wrapper .form {
+  background-color: #fff;
+  margin-top: -55px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 50px 44px;
+}
+
+.membership_wrapper .form h2 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #228366;
+  border-bottom: 1px solid #71a093;
+  padding-bottom: 16px;
+}
+
+.membership_wrapper .form label {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #464f60;
+}
+
+.membership_wrapper .form .input_field {
+  margin: 12px 0px;
+}
+
+.membership_wrapper .form .input_field input {
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.membership_wrapper .form .submit {
+  padding: 8px 38px;
+  background-color: #047857;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.membership_wrapper .form .submit:hover {
+  padding: 8px 38px;
+  background-color: #07372a;
+  border: none;
+  border-radius: 3px;
+}
+
+.about_wrapper .summary {
+  padding: 20px;
+}
+
+.about_wrapper .summary p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+  text-align: justify;
+}
+
+.contact_wrap {
+  margin: 60px 0px;
+}
+
+.contact_wrap .form_section {
+  border: 1px solid #ddd;
+  padding: 40px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.contact_wrap .form_section input {
+  width: 100%;
+  border: none;
+  background: #f7f7fa;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.contact_wrap .form_section textarea {
+  width: 100%;
+}
+
+.contact_wrap .form_section span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #464f60;
+}
+
+.contact_wrap h3 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #065f46;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.contact_wrap .map_section {
+  padding: 40px 40px 40px 60px;
+}
+
+.contact_wrap .map_section .map_content img {
+  width: 100%;
+}
+
+.contact_wrap .map_section ul.map_content {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact_wrap .map_section .map_content li {
+  padding: 15px 0px;
+}
+
+.contact_wrap .map_section .map_content i {
+  color: #047857;
+}
+
+.contact_wrap #submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 8px 28px;
+  background-color: #047857;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.contact_wrap #submit:hover {
+  background-color: #07372a;
+}
+
+.contact_wrap #pass {
+  height: 101px;
+}
+
+.history_wrap {
+  margin: 60px 0px;
+}
+
+.history_wrap .history_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0px;
+}
+
+.history_wrap .fond_box {
+  margin: 16px 0px;
+}
+
+.history_wrap .fond_box:nth-child(2n + 1) .date_found {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.history_wrap .fond_box:nth-child(2n + 1) .nsu_founded {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.history_wrap .fond_box:nth-child(2n + 1) .nsu_founded .square {
+  height: 20px;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  position: absolute;
+  left: 92%;
+  top: 28%;
+  background-color: #f9d3d3;
+}
+
+.history_wrap .fond_box:nth-child(2n + 1) .lines {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.history_wrap .history_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.history_wrap .history_title h2 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 20px;
+  color: #da4747;
+  padding: 12px 24px;
+  border-bottom: 2px solid #f8d5d5;
+}
+
+.history_wrap .history_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.history_wrap .history_date span {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: #201f37;
+}
+
+.history_wrap .date_found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.history_wrap .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.history_wrap .lines .bars {
+  padding: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.history_wrap .lines .bars .bar_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+  border-radius: 50px;
+}
+
+.history_wrap .lines .bars .bar_img::after {
+  content: "";
+  height: 160px;
+  width: 2px;
+  border: 1px solid #f9d3d3;
+  position: absolute;
+  z-index: -1;
+}
+
+.history_wrap .history_found {
+  position: relative;
+  background: #f9d3d3;
+  padding: 22px;
+  -webkit-box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+          box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+}
+
+.history_wrap .history_found .square {
+  height: 20px;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  position: absolute;
+  left: -10px;
+  top: 37%;
+  background-color: #f9d3d3;
+}
+
+.history_wrap .history_found h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #201f37;
+}
+
+.history_wrap .history_found p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121127;
+  margin: 0px;
+}
+
+.history_wrap .summary {
+  padding: 0px 70px;
+}
+
+.history_wrap .summary h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #121127;
+}
+
+.history_wrap .summary p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+}
+
+.single_news {
+  margin: 40px 0px;
+}
+
+.single_news .single_page_news {
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.single_news .single_page_news .event_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.single_news .single_page_news .event_section:hover {
+  background-color: #F1F1F1;
+}
+
+.single_news .single_page_news .event_section .slide_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single_news .single_page_news .event_section .slide_img img {
+  height: 100px;
+  width: 120px;
+}
+
+.single_news .single_page_news .event_section .event_content {
+  padding: 5px 10px;
+}
+
+.single_news .single_page_news .event_section .event_content h4 {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #201f37;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.single_news .single_page_news .event_section .event_content span {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6C6B80;
+}
+
+.single_news .news_img img {
+  width: 100%;
+}
+
+.single_news .news_content {
+  margin: 20px 0px;
+}
+
+.single_news .news_content .news_head h1 {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: #201F37;
+}
+
+.single_news .news_content .news_head p {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6C6B80;
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+.single_news .news_content .news_des p {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4C4B63;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 993px) {
+  .header ul.nav_bar {
+    display: none;
+  }
+  .header .nav_bar_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 14px 0px;
+  }
+  .header .hamburger {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #da4747;
+  }
+  .nebi_res {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .minister_sec .minister {
+    display: none;
+  }
+  .minister_slide_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .minister_slide_wrap .miniser_slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .nebi_president .nsu_img img {
+    padding: 40px;
+    width: 100%;
+  }
+  .footer .contacts ul {
+    padding: 27px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nebi_img {
+    display: none;
+  }
+  .nebi_wrap .nebi_president_content h2 {
+    text-align: center;
+  }
+  .nebi_wrap .nebi_president_content span {
+    display: block;
+    text-align: center;
+  }
+  .nebi_wrap .nebi_president_content p {
+    text-align: left;
+    text-align: justify;
+  }
+  .president_content h2 {
+    text-align: center;
+  }
+  .president_content span {
+    display: block;
+    text-align: center;
+  }
+  .canvas_wrap {
+    background-color: #da4747;
+    width: 250px;
+  }
+  .hamburger {
+    margin-right: 10px;
+  }
+  .mob_nav_bar h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    margin: 20px 0px;
+  }
+  .mob_nav_bar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .mob_nav_bar li {
+    padding: 10px 40px;
+    list-style: none;
+    border-top: 1px solid #b75959;
+  }
+  .mob_nav_bar li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  ul.top_nav .social_media {
+    display: none;
+  }
+  .header ul.top_nav li {
+    border: none;
+  }
+  .slider_main .banner .banner_wrapper {
+    padding: 30px 0px;
+  }
+  .banner_wrapper .b_content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .upcoming_events .wresponse {
+    margin: 25px 0px;
+  }
+  .slider_main .slick-next:before {
+    display: none;
+  }
+  .slider_main .slick-prev:before {
+    display: none;
+  }
+  .slider_main .banner .banner_content h4 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: normal;
+  }
+  .nebi_president .nebi_president_content {
+    padding: 0px;
+  }
+  .slider_main .banner .banner_content button {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+  .upcoming_events .event_section {
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .upcoming_events .event_section .slide_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .upcoming_events .event_section .slide_img img {
+    height: 100;
+    width: 120px;
+  }
+  .upcoming_events .event_section .event_content p {
+    display: none;
+  }
+  .upcoming_events .event_section .event_content span {
+    display: none;
+  }
+  .upcoming_events .event_section .event_content h4 {
+    font-weight: 500;
+    margin: 8px;
+  }
+  .upcoming_events .event_section .vertical_slide {
+    padding: 8px;
+  }
+  .single_news .single_page_news .event_section .event_content h4 {
+    font-size: 16px;
+  }
+  .footer .copyright {
+    border: none;
+  }
+  .footer .contacts {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .contacts ul {
+    padding: 0px;
+  }
+  .footer .contacts ul li {
+    margin: 0px;
+  }
+  .footer .fmenus {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .fmenus li {
+    margin: 0px;
+  }
+  .fond_box {
+    margin: 10px 0px;
+  }
+  .fond_box .lines {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: none;
+  }
+  .fond_box .date_found {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fond_box .square {
+    display: none;
+  }
+  .fond_box:nth-child(2n+1) .date_found {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .fond_box:nth-child(2n+1) .nsu_founded {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .history_wrap .summary {
+    padding: 0px 20px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .hamburger {
+    margin: 0px 10px;
+  }
+  .top_nav {
+    display: none !important;
+  }
+  .header .logo {
+    padding: 2px 0px;
+  }
+  .president .president_img img {
+    padding: 20px;
+  }
+  .slider_main .banner {
+    height: auto;
+  }
+  .nebi_president .nebi_wrap {
+    padding: 10px 0px;
+  }
+  .minister_sec {
+    margin: 25px 0px;
+    padding: 20px 0px;
+  }
+  .president .president_content {
+    padding: 5px;
+  }
+  .nebi_president {
+    margin: 0px;
+  }
+  .nebi_img {
+    display: none;
+  }
+  .upcoming_events .form input {
+    width: 100%;
+  }
+  .president .president_content p {
+    font-size: 16px;
+  }
+  .upcoming_events .vertical_slide {
+    padding: 4px;
+  }
+  .upcoming_events .event_section .event_content p {
+    font-size: 12px;
+  }
+  .nebi_president .nebi_president_content p {
+    font-size: 16px;
+  }
+  .single_news .single_page_news .event_section {
+    padding: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

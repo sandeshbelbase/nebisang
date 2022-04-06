@@ -2,14 +2,19 @@
 * {
   margin: 0px;
 }
+.minister_slide_wrap{
+    display: none;
+}
 .header {
-    // width: 100%;
-    position: sticky;
-    top: 0px;
-    z-index: 5;
-    background-color: #fff;
+  // width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-
+  .hamburger {
+    display: none;
+  }
   .top_head {
     background-color: #da4747;
     height: max-content;
@@ -25,7 +30,7 @@
     padding: 0px 10px;
     color: #fff;
     border-right: 1px solid #abd3c7;
-    font-family: "Euclid Circular B";
+    font-family: "Mukta";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -63,7 +68,7 @@
     border-bottom: 2px solid #fff;
   }
   ul.nav_bar li a {
-    font-family: "Euclid Circular B";
+    font-family: "Mukta";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -74,14 +79,14 @@
     line-height: 63px;
     &:hover {
       text-decoration: none;
-      font-family: "Euclid Circular B";
+      font-family: "Mukta";
       font-style: normal;
       font-size: 16px;
       transition: 0.1s;
       color: #ef4444;
 
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         border-bottom: 3px solid #ef4444;
         position: absolute;
         // top: 0px;
@@ -90,14 +95,23 @@
         left: 0px;
       }
 
-      &:focus{
-      color: #ef4444;
+      &:focus {
+        color: #ef4444;
       }
     }
   }
-  #language {
-    height: fit-content;
+  .select_wrap{
+    background-color: #E9E9E9;
+    padding: 2px 10px;
+    width: fit-content;
+    #language {
+      height: fit-content;
+      border: none;
+      border-radius: 4px;
+      background-color: transparent;
+    }
   }
+ 
   .logo {
     position: absolute;
     top: 0px;
@@ -107,111 +121,106 @@
   }
 }
 
-.slider_main{
+.slider_main {
+  .slick-prev {
+    left: 20px;
+    z-index: 1;
+  }
+  .slick-prev:before {
+    color: #da4747 !important;
+    opacity: 1 !important;
+    padding: 3px;
+  }
+  .slick-next {
+    right: 20px;
+    z-index: 1;
+  }
+  .slick-next:before {
+    color: #da4747 !important;
+    opacity: 1 !important;
+    padding: 3px;
+  }
+  .banner {
+    position: relative;
+    .background_wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .banner_wrapper {
+      padding: 60px 0px;
+    }
 
-    .slick-prev{
-        left: 20px;
-        z-index: 1;
-
+    .bcontent_wrap {
+      z-index: -1;
+      height: calc(100vh - 100px);
+      background-color: rgba(254, 247, 242, 0.8);
     }
-    .slick-prev:before{
-        color: #da4747 !important;
-        opacity: 1 !important;
-        padding: 3px;
+    .banner_img img {
+      width: 100%;
     }
-    .slick-next{
-        right: 20px;
-        z-index: 1;
-
+    .banner_content span {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.9px;
+      text-decoration-line: underline;
+      color: #121127;
     }
-    .slick-next:before{
-        color: #da4747 !important;
-        opacity: 1 !important;
-        padding: 3px;
+    .banner_content h4 {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 35px;
+      color: #065f46;
+      margin: 10px 0px;
     }
-    .banner {
-        position: relative;
-        height: calc(100vh - 100px);
-      
-        .background_wrap {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
-        .banner_wrapper {
-          padding: 60px 0px;
-        }
-      
-        .bcontent_wrap {
-          z-index: -1;
-          height: calc(100vh - 100px);
-          background-color: rgba(254, 247, 242, 0.8);
-        }
-        .banner_img img {
-          width: 100%;
-        }
-        .banner_content span {
-          font-family: "Mukta";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 16px;
-          letter-spacing: 0.9px;
-          text-decoration-line: underline;
-          color: #121127;
-        }
-        .banner_content h4 {
-          font-family: "Mukta";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 22px;
-          line-height: 35px;
-          color: #065f46;
-          margin: 10px 0px;
-        }
-        .banner_content p {
-          font-family: "Mukta";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 28px;
-          color: #383751;
-          margin: 0px;
-          margin: 10px 0px;
-        }
-        .banner_content button {
-          display: flex;
-          flex-direction: row;
-          justify-content: space;
-          align-items: center;
-          padding: 10px 12px 6px 25px;
-          background: #047857;
-          border: none;
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
-          border-radius: 3px;
-          transition: 0.5s ease;
-          margin: 10px 0px;
-        }
-        .banner_content button:hover {
-          transition: 0.5s ease;
-          background-color: rgba(254, 247, 242, 0.8);
-        }
-        .banner_content button:hover span {
-          color: #000;
-        }
-        .banner_content button span {
-          font-family: "Mukta";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: 0.02em;
-          color: #ffffff;
-          text-decoration: none;
-        }
-      }
+    .banner_content p {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #383751;
+      margin: 0px;
+      margin: 10px 0px;
+    }
+    .banner_content button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space;
+      align-items: center;
+      padding: 10px 12px 6px 25px;
+      background: #047857;
+      border: none;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+      border-radius: 3px;
+      transition: 0.5s ease;
+      margin: 10px 0px;
+    }
+    .banner_content button:hover {
+      transition: 0.5s ease;
+      background-color: rgba(254, 247, 242, 0.8);
+    }
+    .banner_content button:hover span {
+      color: #000;
+    }
+    .banner_content button span {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }
 
 .minister_sec {
@@ -230,6 +239,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img {
+      width: 100%;
+    }
   }
   .minister_detail {
     span {
@@ -244,13 +256,16 @@
       display: block;
     }
   }
-  .m_img{
-      width: 100%;
-  }
   .m_img {
     border-radius: 4px;
     box-shadow: 0px 4px 2px green;
     overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 105px;
+    }
   }
 }
 .president {
@@ -337,13 +352,13 @@
   .nsu_img {
     padding-left: 20px;
   }
-  .nsu_img img{
-      width: 100%;
+  .nsu_img img {
+    width: 100%;
   }
 }
 
 .upcoming_events {
-  margin-bottom: 50px;
+  margin: 50px 0px;
   .slide_head {
     display: flex;
     justify-content: space-between;
@@ -369,8 +384,8 @@
       margin-right: 30px;
     }
   }
-  .vertical_slide{
-      margin: 0px !important;
+  .vertical_slide {
+    margin: 0px !important;
   }
   .event_section {
     display: flex;
@@ -380,6 +395,7 @@
 
     .event_content {
       padding: 0px 20px;
+
       h4 {
         font-family: "Mukta";
         font-style: normal;
@@ -430,165 +446,165 @@
     color: #4559bd;
     padding: 4px;
   }
-  .wresponse{
-      margin-left: 20px;
+  .wresponse {
+    margin-left: 20px;
   }
 
-  .form{
-      border: 1px solid #ddd;
-      padding: 30px;
+  .form {
+    border: 1px solid #ddd;
+    padding: 30px;
     //   margin-left: 15px;
-      .half_input{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          .address{
-            display: flex;
-            flex-direction: column;
-            margin: 10px 0px 10px 10px;
-        }
-        .mobile{
-          display: flex;
-          flex-direction: column;
-          margin: 10px 0px;
-        }
-      }
-      .name{
-        margin: 10px 0px;
-          width: 100%;
-      }
-      
-      .message{
-          width: 100%;
-          margin: 10px 0px;
-          textarea{
-                width: 100%;
-            }
-      }
-      .submit{
-          width: fit fit-content;
-          padding: 8px 38px;
-          margin-top: 20px;
-          background: #047857;
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5ADB7E;
-          border-radius: 3px;
-          color: #fff;
-            &:hover{
-                color: #000;
-                background-color: #fff;
-            }
-      }
-      label{
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
+    .half_input {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .address {
         display: flex;
-        align-items: center;
-        letter-spacing: 0.02em;
-        color: #464F60;
-        margin: 5px 0px;
+        flex-direction: column;
+        margin: 10px 0px 10px 10px;
       }
-      input{
-        background: #F1F1F1;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(134, 143, 160, 0.16);
-        border-radius: 3px;
-        border: none;
-        padding: 10px 4px;
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
       }
+    }
+    .name {
+      margin: 10px 0px;
+      width: 100%;
+    }
+
+    .message {
+      width: 100%;
+      margin: 10px 0px;
+      textarea {
+        width: 100%;
+      }
+    }
+    .submit {
+      width: fit fit-content;
+      padding: 8px 38px;
+      margin-top: 20px;
+      background: #047857;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px #5adb7e;
+      border-radius: 3px;
+      color: #fff;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+    label {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #464f60;
+      margin: 5px 0px;
+    }
+    input {
+      background: #f1f1f1;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06),
+        0px 0px 0px 1px rgba(134, 143, 160, 0.16);
+      border-radius: 3px;
+      border: none;
+      padding: 10px 4px;
+    }
   }
 }
 
-.footer{
-    // margin-top: 50px;
-    padding: 50px 0px 30px 0px;
-    background-color: #07372A;
-        .copyright{
-            border-right: 1px solid #B0B0B0;
+.footer {
+  // margin-top: 50px;
+  padding: 50px 0px 30px 0px;
+  background-color: #07372a;
+  .copyright {
+    border-right: 1px solid #b0b0b0;
 
-                .rights{
-                    color: #fff;
-                    opacity: 56%;
-                    margin-top: 20px;
-                }
-                .social_media{
-                    margin-top: 20px;
-                    padding: 0px;
-                    display: flex;
-                        a{
-                            padding-right: 20px;
-                            color: #fff;
-                        }
-                }
-                
+    .rights {
+      color: #fff;
+      opacity: 56%;
+      margin-top: 20px;
+    }
+    .social_media {
+      margin-top: 20px;
+      padding: 0px;
+      display: flex;
+      a {
+        padding-right: 20px;
+        color: #fff;
+      }
+    }
+  }
 
-        }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #b0b0b0;
 
-        .contacts{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-right: 1px solid #B0B0B0;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style: none;
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.44px;
+      color: #d7d8d8;
+      margin: 20px 0px;
+    }
+    li i {
+      padding-right: 10px;
+    }
+  }
 
-                ul{
-                    padding: 0px;
-                }
-                li{
-                    list-style: none;
-                    font-family: 'Euclid Circular B';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 26px;
-                    letter-spacing: 0.44px;
-                    color: #D7D8D8;
-                    margin: 20px 0px;
-                    }
-                    li i{
-                        padding-right: 10px;
-                    }
-        }
-
-        .fmenus{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-                ul{
-                    padding: 0px;
-                }
-                li{
-                    list-style: none;
-                    margin: 10px 0px;
-                }
-                li a{
-                    font-family: 'Euclid Circular B';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 26px;
-                    letter-spacing: 0.44px;
-                    color: #D7D8D8;
-                    text-decoration: none;
-                }
-        }
+  .fmenus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style: none;
+      margin: 10px 0px;
+    }
+    li a {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.44px;
+      color: #d7d8d8;
+      text-decoration: none;
+    }
+  }
 }
 
 // TEams page css starts here
 
-.title_banner{
-  .title_img{
+.title_banner {
+  .title_img {
     background-image: url("../images/title_banner.png");
-    height: 198px;
+    height: 250px;
     background-repeat: no-repeat;
+    background-size: cover;
   }
-  .title_overlay{
+  .title_overlay {
     position: relative;
   }
-  .overlay{
-    height: 198px;
+  .overlay {
+    height: 250px;
     background-color: black;
     position: absolute;
     background-repeat: no-repeat;
@@ -598,137 +614,134 @@
     bottom: 0px;
     opacity: 0.75;
   }
-    .title_img img{
-      width: 100%;
-    }
-    .title_head{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      
-      span{
-        position: absolute;
+  .title_img img {
+    width: 100%;
+  }
+  .title_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    span {
+      position: absolute;
       box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
       padding: 10px 22px;
-      background: #FFFFFF;
-        width: fit-content;
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        color: #047857;
-      }
+      background: #ffffff;
+      width: fit-content;
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #047857;
     }
+  }
 }
 
-.team_member{
+.team_member {
   margin: 50px 0px;
-  .mem{
+  .mem {
     margin: 25px 0px;
-  box-shadow:  0px 8px 20px rgba(18, 17, 39, 0.1);
-      .mem_img img{
-        width: 100%;
-      }
+    box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+    .mem_img img {
+      width: 100%;
+    }
 
-      .mem_content{
-        background-color: #FFFAFA;
-        padding: 20px;
+    .mem_content {
+      background-color: #fffafa;
+      padding: 20px;
 
-        h4{
-          font-family: 'Euclid Circular B';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 20px;
-          color: #201F37;
-        }
-        p{
-          font-family: 'Euclid Circular B';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 20px;
-          color: #4C4B63;
-        }
-        
+      h4 {
+        font-family: "Mukta";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: #201f37;
       }
+      p {
+        font-family: "Mukta";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4c4b63;
+      }
+    }
   }
 }
 
 // Campaing page css starts here
 
-.campaing_banner_wrap{
-    .campaing_wrap{
-      // position: relative;
+.campaing_banner_wrap {
+  .campaing_wrap {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .campaing_head_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .campaing_head {
+    position: absolute;
+    top: 50%;
+    border-left: 3px solid #71a093;
+    padding: 10px 0px;
+    span {
+      display: block;
+      padding-left: 10px;
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 20px;
       display: flex;
-      justify-content: center;
       align-items: center;
+      color: #ffffff;
+      z-index: 1;
     }
-    .campaing_head_wrap{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .campaing_head{
-      position: absolute;
-      top: 50%;
-      border-left: 3px solid #71A093;
-      padding: 10px 0px;
-      span{
-        display: block;
-        padding-left: 10px;
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-        z-index: 1;
-      }
-    }
+  }
 }
 
-.ongoing_camp{
-    margin-top: 50px;
-
+.ongoing_camp {
+  margin-top: 50px;
 }
 
 // campaing page css ends here
 
-
 // <---------------->
-
 
 // membership page css starts here
 
-.membership_wrapper{
+.membership_wrapper {
   margin-bottom: 50px;
-  .form{
+  .form {
     background-color: #fff;
-    margin-top: -32px;
+    margin-top: -55px;
     z-index: 1;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    padding: 30px 50px;
-    h2{
-      font-family: 'Euclid Circular B';
+    padding: 50px 44px;
+
+    h2 {
+      font-family: "Mukta";
       font-style: normal;
       font-weight: 600;
       font-size: 20px;
       line-height: 20px;
       display: flex;
       align-items: center;
-      color: #228366; 
-      border-bottom: 1px solid #71A093;
+      color: #228366;
+      border-bottom: 1px solid #71a093;
       padding-bottom: 16px;
     }
-    label{
-      font-family: 'Euclid Circular B';
+    label {
+      font-family: "Mukta";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -736,28 +749,28 @@
       display: flex;
       align-items: center;
       letter-spacing: 0.02em;
-      color: #464F60;
+      color: #464f60;
     }
-    .input_field{
+    .input_field {
       margin: 12px 0px;
-      input{
+      input {
         width: 100%;
         margin: 5px 0px;
         border: none;
-        background-color: #F1F1F1;
+        background-color: #f1f1f1;
         padding: 10px;
       }
     }
-    .submit{
+    .submit {
       padding: 8px 38px;
       background-color: #047857;
       border: none;
       border-radius: 3px;
       color: #fff;
     }
-    .submit:hover{
+    .submit:hover {
       padding: 8px 38px;
-      background-color: #07372A;
+      background-color: #07372a;
       border: none;
       border-radius: 3px;
     }
@@ -769,24 +782,21 @@
 // -----------------------------
 // -----------------------------
 
-
 // about page css starts here
 
-.about_wrapper{
-  
-  .summary{
-    padding: 60px;
-    p{
-      font-family: 'Euclid Circular B';
+.about_wrapper {
+  .summary {
+    padding: 20px;
+    p {
+      font-family: "Mukta";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
-      line-height: 44px;
+      line-height: normal;
       color: #000000;
       text-align: justify;
     }
   }
-  
 }
 
 // css of about erap ends here
@@ -795,69 +805,69 @@
 
 // CSS of contact page starts here
 
-.contact_wrap{
+.contact_wrap {
   margin: 60px 0px;
 
-  .form_section{
+  .form_section {
     border: 1px solid #ddd;
     padding: 40px;
     height: max-content;
- input{
-    width: 100%;
-    border: none;
-    background: #F7F7FA;
-    border-radius: 3px;
-    padding: 10px;
-    margin-bottom: 16px;
-}
-textarea{
-  width: 100%;
-}
- span{
-  font-family: 'Euclid Circular B';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #464F60;
-} 
-}
+    input {
+      width: 100%;
+      border: none;
+      background: #f7f7fa;
+      border-radius: 3px;
+      padding: 10px;
+      margin-bottom: 16px;
+    }
+    textarea {
+      width: 100%;
+    }
+    span {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #464f60;
+    }
+  }
 
- h3{
-  font-family: 'Euclid Circular B';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 26px;
-  text-decoration-line: underline;
-   color: #065F46;
-   padding-bottom: 10px;
-   display: block;
-}
+  h3 {
+    font-family: "Mukta";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #065f46;
+    padding-bottom: 10px;
+    display: block;
+  }
 
-.map_section{
+  .map_section {
     padding: 40px 40px 40px 60px;
 
-  .map_content img{
+    .map_content img {
       width: 100%;
-  }
-  ul.map_content{
+    }
+    ul.map_content {
       list-style: none;
       padding: 0px;
       margin: 0px;
-  }
-  .map_content {
-    li{
-      padding: 15px 0px;
-  }
-    i{
-      color: #047857;
     }
-}
+    .map_content {
+      li {
+        padding: 15px 0px;
+      }
+      i {
+        color: #047857;
+      }
+    }
   }
 
-#submit{
+  #submit {
     display: flex;
     max-width: fit-content;
     padding: 8px 28px;
@@ -865,159 +875,581 @@ textarea{
     color: #fff;
     margin-top: 20px;
 
-    &:hover{
+    &:hover {
       background-color: #07372a;
     }
-}
-#pass{
+  }
+  #pass {
     height: 101px;
-}
+  }
 }
 
 // Contact_page css ends here
 
-
 // History Page css starts here
 
-.history_wrap{
+.history_wrap {
   margin: 60px 0px;
 
-  .history_container{
-
-    .lines{
-      height: 1px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .bars{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-       .b_img{
-        &::after{
-          content: '';
-          height: 150px;
-          color: red;
-          width: 2px;
-          border: 2px solid #000;
-        }
-       }
-      }
-    }
-   .nsu_founded{
+  .history_container {
     display: flex;
-    justify-content: center;
     align-items: center;
-  
-    .history_found{
-      background: #F9D3D3;
-      padding: 22px;
-      box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
-      h4{
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 20px;
-        color: #201F37;
-      }
-      p{
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #121127;
-        margin: 0px;
+    margin: 30px 0px;
+    // justify-content: center;
+  }
+
+  .fond_box {
+    margin: 16px 0px;
+  }
+  .fond_box:nth-child(2n + 1) {
+    .date_found {
+      order: 3;
+      justify-content: flex-start;
+    }
+    .nsu_founded {
+      order: 1;
+      justify-content: flex-start;
+
+      .square {
+        height: 20px;
+        width: 30px;
+        transform: rotate(45deg);
+        position: absolute;
+        position: absolute;
+        left: 92%;
+        top: 28%;
+        background-color: #f9d3d3;
       }
     }
+    .lines {
+      order: 2;
+    }
+  }
 
-  }
-    
-  }
- .row:nth-child(2n){
-  .nsu-dates{
-    order:3;
-  }
-  .nsu_founded{
-    order: 1;
-    justify-content: flex-start;
-  }
-  .lines{
-    order: 2;
-  }
- }
-  
-  .history_title{
+  .history_title {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-     h2{
-      font-family: 'Euclid Circular B';
+    h2 {
+      font-family: "Mukta";
       font-style: normal;
       font-weight: 600;
       font-size: 25px;
       line-height: 20px;
-      color: #DA4747;
+      color: #da4747;
       padding: 12px 24px;
-      border-bottom: 2px solid #F8D5D5;
-     }
+      border-bottom: 2px solid #f8d5d5;
+    }
   }
-  .history_date_wrap{
+  .history_date {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-right: 30px;
+    justify-content: flex-end;
+    span {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      color: #201f37;
+    }
   }
-    .history_date{
-      height: 100%;
-      margin-right: 30px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 30;
 
-      span{
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 24px;
-        color: #201F37;
+  .date_found {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .bars {
+      padding: 10px;
+      background-color: #fff;
+      position: relative;
+
+      .bar_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: pink;
+        border-radius: 50px;
+
+        &::after {
+          content: "";
+          height: 160px;
+          width: 2px;
+          border: 1px solid #f9d3d3;
+          position: absolute;
+          z-index: -1;
+        }
       }
     }
-        
+  }
+
+  .history_found {
+    position: relative;
+    background: #f9d3d3;
+    padding: 22px;
+    box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.1);
+
+    .square {
+      height: 20px;
+      width: 30px;
+      transform: rotate(45deg);
+      position: absolute;
+      position: absolute;
+      left: -10px;
+      top: 37%;
+      background-color: #f9d3d3;
+    }
+    h4 {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+      color: #201f37;
+    }
+    p {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #121127;
+      margin: 0px;
+    }
+  }
+  .summary {
+    padding: 0px 70px;
+    h4 {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: normal;
+      text-decoration-line: underline;
+      color: #121127;
+    }
+    p {
+      font-family: "Mukta";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal;
+      color: #000000;
+    }
+  }
 }
-      
-      
 
-   
+//single page css starts here
 
+.single_news{
+  margin: 40px 0px;
+  .single_page_news{
+    border: 1px solid rgb(238, 238, 238);
+    padding: 10px;
+    margin-bottom: 20px;
+    .event_section{
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 10px;
+      margin: 10px 0px;
 
+        &:hover{
+          background-color: #F1F1F1;
+        }
+        .slide_img{
+          display: flex;
+          justify-content: center;
+          
+          img{
+            height: 100px;
+            width: 120px;
 
-
-
-
-  .summary{
-  padding: 0px 70px;
-  h4{
-    font-family: 'Euclid Circular B';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 40px;
-    text-decoration-line: underline;
-    color: #121127;
+            // height: 180px;
+            // width: 180px; 
+          }
+        }
+      .event_content{
+        padding: 5px 10px;
+        h4{
+          font-family: "Mukta";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.02em;
+          color: #201f37;
+          text-align: justify;
+          margin-bottom: 0;
+        }
+        span{
+          font-family: 'Mukta';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #6C6B80;
+          
+        }
+      }
+    }
   }
-  p{
-    font-family: 'Euclid Circular B';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 44px;
-    color: #000000;
+
+  .news_img{
+    img{
+      width: 100%;
+    }
   }
+
+  .news_content{
+    margin: 20px 0px;
+    .news_head{
+      h1{
+        font-family: 'Mukta';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: #201F37;
+        
+      }
+      p{
+        font-family: 'Mukta';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #6C6B80;
+        padding: 0px;
+        margin-bottom: 16px;
+
+      }
+    }
+    .news_des{
+      p{
+        font-family: 'Mukta';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #4C4B63;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+
+
+
+// Responsive
+// ?????????????????????????????
+// ?????????????????????????????????
+
+@media only screen and (max-width: 993px) {
+  .header {
+    ul.nav_bar {
+      display: none;
+    }
+    .nav_bar_wrap {
+      display: flex;
+      justify-content: flex-end;
+      padding: 14px 0px;
+    }
+    .hamburger {
+      display: block;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #da4747;
+    }
+  }
+  .nebi_res {
+    order: 2;
+  }
+  .minister_sec{
+    .minister{
+      display: none;
+    }
+  }
+ .minister_slide_wrap{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   .miniser_slider{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+   }
+ }
+
+  .nebi_president .nsu_img img {
+    padding: 40px;
+    width: 100%;
+  }
+  .footer .contacts ul {
+    padding: 27px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nebi_img{
+    display: none;
+  }
+  .nebi_wrap{
+    .nebi_president_content{
+      h2{
+        text-align: center;
+      }
+      span{
+        display: block;
+        text-align: center;
+      }
+      p{
+        text-align: left;
+        text-align: justify;
+      }
+    }
+  }
+
+  .president_content{
+    h2{
+      text-align: center;
+    }
+    span{
+      display: block;
+      text-align: center;
+    }
+  }
+  .canvas_wrap {
+    background-color: #da4747;
+    width: 250px;
+  }
+  .hamburger{
+    margin-right: 10px;
+  }
+  .mob_nav_bar {
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin: 20px 0px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      padding: 10px 40px;
+      list-style: none;
+      border-top: 1px solid #b75959;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  ul.top_nav {
+    .social_media {
+      display: none;
+    }
+  }
+  .header ul.top_nav li {
+    border: none;
+  }
+  .slider_main .banner .banner_wrapper {
+    padding: 30px 0px;
+  }
+  .banner_wrapper .b_content{
+    order: 2;
+  }
+  .upcoming_events .wresponse {
+    margin: 25px 0px;
+  }
+  .slider_main .slick-next:before {
+    display: none;
+  }
+  .slider_main .slick-prev:before {
+    display: none;
+  }
+
+  .slider_main .banner .banner_content {
+    h4 {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: normal;
+    }
+  }
+  .nebi_president .nebi_president_content {
+    padding: 0px;
+  }
+  .slider_main .banner .banner_content button {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+
+  .upcoming_events .event_section {
+    padding: 0px;
+    margin: 10px 0px;
+
+    .slide_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 100;
+        width: 120px 
+      }
+    }
+    .event_content {
+     p{
+       display: none;
+     }
+     span{
+       display: none;
+     }
+      h4 {
+        font-weight: 500;
+        margin: 8px;
+      }
+    }
+    .vertical_slide {
+      padding: 8px;
+    }
+  }
+  .single_news .single_page_news .event_section .event_content h4{
+    font-size: 16px;
+  }
+  .footer {
+    .copyright {
+      border: none;
+    }
+
+    .contacts {
+      justify-content: flex-start;
+      border: none;
+      flex-direction: row;
+
+      ul {
+        padding: 0px;
+
+        li {
+          margin: 0px;
+        }
+      }
+    }
+
+    .fmenus {
+      justify-content: flex-start;
+      border: none;
+      flex-direction: row;
+      li {
+        margin: 0px;
+      }
+    }
+  }
+  .fond_box{
+    margin: 10px 0px;
+    .lines{
+      order: 2;
+      display: none;
+    }
+ 
+    .date_found {
+      justify-content: center;
+    }
+    .square{
+      display: none;
+    }
+  }
+  .fond_box:nth-child(2n+1) {
+    .date_found {
+      order: 1 !important;
+      justify-content: center !important;
+
+    }
+    .nsu_founded {
+      order: 2;
+      justify-content: flex-start;
+
+    }
+    
+  }
+  .history_wrap .summary {
+    padding: 0px 20px;
+    text-align: justify;
+}
+}
+
+@media only screen and (max-width: 415px) {
+  .hamburger {
+    margin: 0px 10px;
+  }
+  .top_nav {
+    display: none !important;
+  }
+  .header .logo {
+    padding: 2px 0px;
+  }
+  .president .president_img img {
+    padding: 20px;
+  }
+  .slider_main .banner {
+    height: auto;
+  }
+  
+ 
+  .nebi_president .nebi_wrap {
+    padding: 10px 0px;
+  }
+  
+  .minister_sec {
+    margin: 25px 0px;
+    padding: 20px 0px;
+  }
+  .president .president_content {
+    padding: 5px;
+  }
+  .nebi_president {
+    margin: 0px;
+  }
+  .nebi_img {
+    display: none;
+  }
+  .upcoming_events .form input {
+    width: 100%;
+  }
+  .president .president_content p {
+    font-size: 16px;
+  }
+  .upcoming_events .vertical_slide {
+    padding: 4px;
+  }
+  .upcoming_events .event_section .event_content p {
+    font-size: 12px;
+  }
+  .nebi_president .nebi_president_content p {
+    font-size: 16px;
+  }
+  .single_news .single_page_news .event_section{
+    padding: 0px;
   }
 
 }
