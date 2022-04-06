@@ -408,7 +408,7 @@
     }
   }
   .event_section:hover {
-    background-color: #ddd;
+    background: rgba(219, 209, 209, 0.2);
   }
   .vertical_slide {
     border: 2px solid #e5e5eb;
@@ -711,10 +711,10 @@
   margin-bottom: 50px;
   .form{
     background-color: #fff;
-    margin-top: -25px;
+    margin-top: -32px;
     z-index: 1;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    padding: 30px 40px;
+    padding: 30px 50px;
     h2{
       font-family: 'Euclid Circular B';
       font-style: normal;
@@ -883,46 +883,33 @@ textarea{
   margin: 60px 0px;
 
   .history_container{
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-  }
-
-  .history_title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-     h2{
-      font-family: 'Euclid Circular B';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 25px;
-      line-height: 20px;
-      color: #DA4747;
-      padding: 12px 24px;
-      border-bottom: 2px solid #F8D5D5;
-     }
-  }
-    .history_date{
-      display: flex;
-      justify-content: flex-end;
-      span{
-        font-family: 'Euclid Circular B';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 24px;
-        color: #201F37;
-      }
-    }
 
     .lines{
+      height: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-    }
+      .bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+       .b_img{
+        &::after{
+          content: '';
+          height: 150px;
+          color: red;
+          width: 2px;
+          border: 2px solid #000;
+        }
+       }
+      }
+    }
+   .nsu_founded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
     .history_found{
       background: #F9D3D3;
       padding: 22px;
@@ -946,8 +933,66 @@ textarea{
       }
     }
 
+  }
+    
+  }
+ .row:nth-child(2n){
+  .nsu-dates{
+    order:3;
+  }
+  .nsu_founded{
+    order: 1;
+    justify-content: flex-start;
+  }
+  .lines{
+    order: 2;
+  }
+ }
+  
+  .history_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+     h2{
+      font-family: 'Euclid Circular B';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 20px;
+      color: #DA4747;
+      padding: 12px 24px;
+      border-bottom: 2px solid #F8D5D5;
+     }
+  }
+  .history_date_wrap{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+  }
+    .history_date{
+      height: 100%;
+      margin-right: 30px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 30;
 
+      span{
+        font-family: 'Euclid Circular B';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        color: #201F37;
+      }
+    }
+        
+}
+      
+      
 
+   
 
 
 
